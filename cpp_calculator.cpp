@@ -54,3 +54,10 @@ void BINARY_OUTPUT(){
         cout << OPERATOR << "-> IS INVALID OPERATOR TRY AGAIN WITH VALID ONE.";
     }
 }
+
+int main(){
+    USER_INPUTS();
+    BINARY_OUTPUT();
+
+    return 0;
+}
