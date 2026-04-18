@@ -15,3 +15,42 @@ void USER_INPUTS(){
     cout << "ENTER THE OPERATOR -> ";
     cin >> OPERATOR;
 }
+
+void BINARY_OUTPUT(){
+    if (OPERATOR == '+')
+    {
+        float RESULT = FIRSTNUMBER + SECONDNUMBER;
+        float ROUNDED = round(RESULT * 100) / 100.0;
+
+        cout << "UNROUNDED RESULT -> " << RESULT << "\n";
+        cout << "ROUNDED RESULT -> " << ROUNDED << "\n";
+    }
+    else if (OPERATOR == '-')
+    {
+        float RESULT = FIRSTNUMBER - SECONDNUMBER;
+        float ROUNDED = round(RESULT * 100) / 100.0;
+
+        cout << "UNROUNDED RESULT -> " << RESULT << "\n";
+        cout << "ROUNDED RESULT -> " << ROUNDED << "\n";
+    }
+    else if (OPERATOR == '/')
+    {
+        float RESULT = FIRSTNUMBER / SECONDNUMBER;
+        float ROUNDED = round(RESULT * 100) / 100.0;
+
+        cout << "UNROUNDED RESULT -> " << RESULT << "\n";
+        cout << "ROUNDED RESULT -> " << ROUNDED << "\n";
+    }
+    else if (OPERATOR == '*')
+    {
+        float RESULT = FIRSTNUMBER * SECONDNUMBER;
+        float ROUNDED = round(RESULT * 100) / 100.0;
+
+        cout << "UNROUNDED RESULT -> " << RESULT << "\n";
+        cout << "ROUNDED RESULT -> " << ROUNDED << "\n";
+    }
+    else
+    {
+        cout << OPERATOR << "-> IS INVALID OPERATOR TRY AGAIN WITH VALID ONE.";
+    }
+}
